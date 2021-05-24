@@ -1,0 +1,12 @@
+{
+  "name": "gh-status-updater",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Albin Groen",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "minimist": "^1.2.5"
+  }
+}
