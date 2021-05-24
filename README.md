@@ -1,19 +1,35 @@
 # gh-status-updater
 
-A simple cli script to update your GitHub profile status
+A simple command you can use to update your GitHub profile status.
+
+![Minzipped size](https://img.shields.io/bundlephobia/minzip/gh-status-updater?style=plastic)
+
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com) to install gh-status-updater.
+
+```bash
+npm install -g gh-status-updater
+```
 
 ## Usage
 
-1. Install the package
+```bash
+update-gh-status
+  # GitHub user-level access token (Only necessary on first run)
+  --token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-```
-npm i -g gh-status-updater
+  # The message of the status
+  --message="Working from home"
+
+  # The emoji of the status
+  --emoji=🏡
 ```
 
-2. Run the script
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-You only have to supply the `--token` parameter the first time!
+Please make sure to update tests as appropriate.
 
-```
-update-gh-status --token=[YOUR_GITHUB_ACCESS_TOKEN] --message="Working from home" --emoji=🏡
-```
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
