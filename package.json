@@ -1,7 +1,7 @@
 {
   "name": "gh-status-updater",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "./bin/index.js",
   "author": "Albin Groen",
   "preferGlobal": true,
   "license": "MIT",
