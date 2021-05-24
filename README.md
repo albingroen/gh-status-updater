@@ -15,5 +15,5 @@ npm i -g gh-status-updater
 You only have to supply the `--token` parameter the first time!
 
 ```
-node index.js --token=[YOUR_GITHUB_ACCESS_TOKEN] --message="Working from home" --emoji=🏡
+update-gh-status --token=[YOUR_GITHUB_ACCESS_TOKEN] --message="Working from home" --emoji=🏡
 ```
