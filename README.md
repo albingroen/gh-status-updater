@@ -26,6 +26,9 @@ update-gh-status
   --emoji=🏡
 ```
 
+## Demo
+https://user-images.githubusercontent.com/19674362/119400065-f0def200-bcd9-11eb-8486-d41c008a9165.mp4
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
