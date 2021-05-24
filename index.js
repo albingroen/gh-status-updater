@@ -16,7 +16,7 @@ const main = () => {
     throw Error("Please enter a message and emoji");
   }
 
-  if (!process.env.GITHUB_ACCESS_TOKEN || !token) {
+  if (!process.env.GITHUB_ACCESS_TOKEN && !token) {
     throw Error("Missing GitHub access token");
   }
 
