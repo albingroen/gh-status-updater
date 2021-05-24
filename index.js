@@ -9,7 +9,7 @@ const main = () => {
   const { message, emoji, token } = argv;
 
   if (token) {
-    fs.writeFileSync(".env", `GITHUB_ACCESS_TOKEN=${token}`);
+    fs.writeFileSync(`${__dirname}/.env`, `GITHUB_ACCESS_TOKEN=${token}`);
   }
 
   if (!message || !emoji) {
@@ -17,7 +17,7 @@ const main = () => {
   }
 
   if (!process.env.GITHUB_ACCESS_TOKEN || !token) {
-    throw  Error("Missing GitHub access token")
+    throw Error("Missing GitHub access token");
   }
 
   const data = JSON.stringify({
@@ -39,4 +39,4 @@ const main = () => {
     });
 };
 
-module.exports = main
+module.exports = main;
