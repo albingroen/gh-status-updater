@@ -7,7 +7,7 @@
     "url": "https://github.com/albingroen/gh-status-updater"
   },
   "version": "1.0.9",
-  "main": "./bin/index.js",
+  "main": "./index.js",
   "author": "Albin Groen",
   "preferGlobal": true,
   "license": "MIT",
