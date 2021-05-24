@@ -1,13 +1,10 @@
-const argv = require("minimist")(process.argv.slice(2));
 const axios = require("axios");
 const fs = require("fs");
 require("dotenv").config();
 
 const apiUrl = "https://api.github.com/graphql";
 
-const main = () => {
-  const { message, emoji, token } = argv;
-
+const main = (message, emoji, token) => {
   if (token) {
     fs.writeFileSync(`${__dirname}/.env`, `GITHUB_ACCESS_TOKEN=${token}`);
   }
@@ -31,11 +28,13 @@ const main = () => {
         Authorization: `bearer ${process.env.GITHUB_ACCESS_TOKEN || token}`,
       },
     })
-    .then((res) => {
+    .then(() => {
       console.info("Done!");
     })
     .catch((err) => {
-      console.error(err);
+      console.error(
+        (err.response && error.response.data.message) || err.message
+      );
     });
 };
 
