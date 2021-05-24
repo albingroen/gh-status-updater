@@ -1,6 +1,6 @@
 {
   "name": "gh-status-updater",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./bin/index.js",
   "author": "Albin Groen",
   "preferGlobal": true,
