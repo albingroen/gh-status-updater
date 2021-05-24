@@ -8,4 +8,6 @@ A simple cli script to update your GitHub profile status
 
 2. Run the script
 
-    node inde.jx --message="Working from home" --emoji=🏡
+```
+node inde.jx --message="Working from home" --emoji=🏡
+```
