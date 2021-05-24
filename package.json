@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Albin Groen",
+  "preferGlobal": true,
   "license": "MIT",
+  "bin": {
+    "update-gh-status": "./bin/index.js"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",

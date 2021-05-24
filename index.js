@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const apiUrl = "https://api.github.com/graphql";
 
-const main = () => {
+export const main = () => {
   const { message, emoji } = argv;
 
   if (!message || !emoji) {
