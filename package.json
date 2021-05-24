@@ -2,7 +2,7 @@
   "name": "gh-status-updater",
   "description": "A simple command you can use to update your GitHub profile status.",
   "keywords": ["node", "github", "javascript", "status"],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "./bin/index.js",
   "author": "Albin Groen",
   "preferGlobal": true,
