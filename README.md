@@ -14,6 +14,8 @@ npm install -g gh-status-updater
 
 ## Usage
 
+### CLI
+
 ```bash
 update-gh-status
   # GitHub user-level access token (Only necessary on first run)
@@ -24,6 +26,14 @@ update-gh-status
 
   # The emoji of the status
   --emoji=🏡
+```
+
+### JavaScript module
+
+```javascript
+import updateGhStatus from "gh-status-updater";
+
+await updateGhStatus("Working from home", "🏡", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 ```
 
 ## Demo
