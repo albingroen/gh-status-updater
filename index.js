@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const apiUrl = "https://api.github.com/graphql";
 
-const main = (message, emoji, token) => {
+const main = (message, emoji, limitedAvailability = false, token) => {
   if (token) {
     fs.writeFileSync(`${__dirname}/.env`, `GITHUB_ACCESS_TOKEN=${token}`);
   }
@@ -18,7 +18,7 @@ const main = (message, emoji, token) => {
   }
 
   const data = JSON.stringify({
-    query: `mutation { changeUserStatus(input: { emoji: "${emoji}", message: "${message}" }) { clientMutationId status { emoji } } }`,
+    query: `mutation { changeUserStatus(input: { emoji: "${emoji}", message: "${message}", limitedAvailability: ${limitedAvailability} }) { clientMutationId status { emoji } } }`,
     variables: {},
   });
 
