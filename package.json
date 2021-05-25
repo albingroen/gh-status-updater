@@ -6,7 +6,7 @@
   "repository": {
     "url": "https://github.com/albingroen/gh-status-updater"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./index.js",
   "author": "Albin Groen",
   "preferGlobal": true,
